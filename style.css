@@ -6,38 +6,52 @@
   font-style: normal;
 }
 
-main {
-  width: 100%;
-  min-height: 100vh;
-  background: no-repeat url(/assets/imgs/hero.png);
-  background-position: top;
-  background-size: cover;
-}
-.nav_wrap {
+header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1440px;
   width: 100%;
-  height: 120px;
-  margin: 0 auto;
-}
-
-.nav_wrap .shipping_title {
-  font-size: 14px;
-  line-height: 160%;
-  text-align: center;
-  color: #fff;
-  padding: 10px 0;
+  min-height: 100vh;
+  background: url(/assets/imgs/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
   display: flex;
   width: 100%;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  border-top: 1px solid #fff;
   padding: 24px 0;
+}
+
+.header__announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  width: 100%;
+  height: 42px;
+  border-bottom: 1px solid #ffffff;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+}
+.header__links__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 24px;
 }
 
 nav ul {
@@ -52,44 +66,35 @@ nav ul li {
   line-height: 19px;
   color: #fff;
 }
-nav h2 {
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 2px;
-  line-height: 25px;
-  color: #fff;
-}
 
-.title {
+.header__content {
+  max-width: 800px;
+  width: 100%;
+  margin: auto auto 80px auto;
   display: flex;
-  /* height: 100%; */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 20%;
 }
 
-.title span {
+.header__content__subtext {
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 40px;
+  padding-bottom: 16px;
 }
-
-.title h1 {
+.header__content__maintext {
   font-weight: 700;
   font-size: 80px;
-  line-height: 90px;
+  line-height: 90%;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 800px;
 }
-
-.title button {
+.header__content__cta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,100 +114,152 @@ nav h2 {
   outline: none;
 }
 
-.brand_name h5,
-h3 {
-  text-align: center;
+.section__products__header__button__prev {
+  transform: rotate(180deg);
 }
 
-.brand_name h5 {
+.products__section {
+  padding: 100px 0 46px 80px;
+}
+
+.section__products__header {
+  display: flex;
+  align-items: center;
+}
+
+.section__products__header__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.section__products__header__controllers {
+  display: flex;
+  align-items: end;
+  margin: 0 80px 0 auto;
+  position: relative;
+}
+
+.section__products__header__controllers a {
+  margin-right: 24px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 140%;
-  text-align: center;
+  line-height: 160%;
   text-transform: uppercase;
   color: #222222;
-  margin: 45px 0 16px 0;
+  border-bottom: 2px solid #7373d7;
+  text-decoration: none;
 }
 
-.brand_name h3 {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 140%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222222;
-  max-width: 960px;
-  margin: 0 auto;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 12px;
+  color: white;
 }
-
-.brand_name h3 span {
-  color: #7373d7;
-  margin: 0 auto;
-  display: block;
-  width: fit-content;
-  border-bottom: 1px dashed #7373d7;
-}
-
-.card_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 24px;
-  margin-top: 56px;
-}
-
-.card_wrap .card h3 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.card_wrap .card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
-}
-
-.swiper {
-  max-width: 1400px;
-  height: 650px;
-}
-
-.swiper-slide {
-  width: 411px;
-  height: 548px;
-  background: rgb(255, 255, 255);
-  margin: 20px;
-}
-
-/* carousel start */
-
-.swiper-wrapper {
-  max-width: 1400px;
-  /* margin: 0 auto; */
-  background: red !important;
-}
-
-/* carousel end */
-
-/* discover start*/
-
-.discover .title_wrap {
-  display: flex;
-  align-items: center;
-}
-
-/* discover end*/
 
 .swiper-button-prev,
 .swiper-button-next {
-  width: 35px;
-  height: 35px;
+  position: static;
   background: #7373d7;
   border-radius: 17.5px;
-  position: static;
+  width: 35px;
+  height: 35px;
+}
+
+.swiper-button-prev {
+  margin-right: 5px;
+}
+
+.section__products__item {
+  width: 100%;
+  height: 100%;
+  background: #7373d7;
+}
+
+.section__products__item__view {
+  height: 85%;
+}
+
+.section__products__item__footer {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  height: 34px; */
+  margin: 12% 16px 16px 16px;
+  font-weight: 400;
+  height: 100%;
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.section__products__item__footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.section__products_list {
+  margin-top: 30px;
+}
+
+#container {
+  width: 100%;
+  height: 650px;
+}
+
+.section__products__item__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #c9c9ff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7373d7;
+  margin: 16px 16px 16px auto;
+}
+
+.section__products__item:hover .section__products__item__status {
+  background: #fff;
+}
+
+.section__products__item__image {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.section__products__item__description {
+  margin-top: auto;
+  background: #fff;
+  width: 100%;
+  height: 15%;
+  padding-top: 8px;
+}
+
+.section__products__item__description h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.section__products__item__description h4 span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration-line: line-through;
+  color: #555555;
+  opacity: 0.5;
+  margin-right: 8px;
 }
