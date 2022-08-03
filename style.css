@@ -12,10 +12,9 @@ header {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background: url(/assets/imgs/hero.png);
+  background: url(/assets/imgs/header-img.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
 nav {
@@ -236,6 +235,8 @@ nav ul li {
 .section__products__item__image {
   margin-left: 50%;
   transform: translate(-50%);
+  max-width: 325px;
+  max-height: 325px;
 }
 
 .section__products__item__description {
@@ -251,7 +252,7 @@ nav ul li {
   font-size: 16px;
   line-height: 160%;
   color: #222222;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .section__products__item__description h4 span {
@@ -262,4 +263,68 @@ nav ul li {
   color: #555555;
   opacity: 0.5;
   margin-right: 8px;
+}
+
+/* ------------------------- PERFUME SECTION  ---------------------*/
+
+.perfumes__section {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 80px 80px;
+}
+.perfumes__section__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 45px 0 16px 0;
+}
+.perfumes__section__maintitle {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.perfumes__section__maintitle span {
+  color: #7373d7;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  border-bottom: 1px dashed #7373d7;
+}
+.perfumes__section__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 24px;
+  margin-top: 56px;
+}
+.perfumes__section__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  max-width: 254px;
+}
+.perfumes__section__item__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+.perfumes__section__item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #222222;
 }

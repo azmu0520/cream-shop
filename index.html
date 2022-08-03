@@ -4,27 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cream Shop</title>
-    <!-- links start -->
+    <title>CREAM SHOP</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="collections.css" />
+    <link rel="stylesheet" href="/features__section.css" />
+    <link rel="stylesheet" href="/portirates__section.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <header>
-      <div class="nav_wrap">
-        <span class="shipping_title"
-          >Free Shipping for all orders over $100
-        </span>
-        <nav>
+      <nav>
+        <div class="header__announcement">
+          Free Shipping for all orders over $100
+        </div>
+        <div class="header__links__wrapper">
           <ul>
             <li>SHOP</li>
             <li>ABOUT</li>
@@ -36,192 +37,317 @@
             <li>SEARCH</li>
             <li>CART(0)</li>
           </ul>
-        </nav>
+        </div>
+      </nav>
+      <div class="header__content">
+        <span class="header__content__subtext">At vero eoset</span>
+        <h1 class="header__content__maintext">Lorem ipsum de dolor amet</h1>
+        <button class="header__content__cta">SHOP NOW</button>
       </div>
-      <section class="title">
-        <span>At vero eoset</span>
-        <h1>Lorem ipsum de dolor amet</h1>
-        <button>SHOP NOW</button>
-      </section>
-    </head>
-    <section class="discover">
-      <div class="title_wrap">
-        <h2 class="discover_title">Discover our products</h2>
-        <div class="discover_tap_wrap">
-          <span> SHOP ALL</span>
-          <div class="button-prev"><</div>
-          <div class="button-next">></div>
+    </header>
+    <section class="products__section">
+      <div class="section__products__header">
+        <h2 class="section__products__header__title">Discover our products</h2>
+        <div class="section__products__header__controllers">
+          <a href="/">SHOP ALL</a>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="swiper">
+      <div class="swiper section__products_list">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
+          <div class="swiper-slide section__products__item">
+            <div class="section__products__item__view">
+              <div class="section__products__item__status">new</div>
+              <img
+                src="/assets/imgs/products-img1.png"
+                class="section__products__item__image"
+              />
+              <div class="section__products__item__footer">
+                <a href="/"> + Quick Shop </a>
               </div>
-              <div class="price">$28.00</div>
+            </div>
+            <div class="section__products__item__description">
+              <h4 class="section__products__item__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="price">$28.00 <span>$32.00</span></h4>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
+          <div class="swiper-slide section__products__item">
+            <div class="section__products__item__view">
+              <div class="section__products__item__status">new</div>
+              <img
+                src="/assets/imgs/products-img1.png"
+                class="section__products__item__image"
+              />
+              <div class="section__products__item__footer">
+                <a href="/"> + Quick Shop </a>
               </div>
-              <div class="price">$28.00</div>
+            </div>
+            <div class="section__products__item__description">
+              <h4 class="section__products__item__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="price">$28.00 <span>$32.00</span></h4>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
+          <div class="swiper-slide section__products__item">
+            <div class="section__products__item__view">
+              <div class="section__products__item__status">new</div>
+              <img
+                src="/assets/imgs/products-img3.png"
+                class="section__products__item__image"
+              />
+              <div class="section__products__item__footer">
+                <a href="/"> + Quick Shop </a>
               </div>
-              <div class="price">$28.00</div>
+            </div>
+            <div class="section__products__item__description">
+              <h4 class="section__products__item__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="price">$28.00 <span>$32.00</span></h4>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
+
+          <div class="product__box swiper-slide">
+            <div class="product__image-wrapper">
+              <div class="product__badge">new</div>
+              <img
+                src="/assets/imgs/products-img2.png"
+                class="product__image"
+              />
+              <a class="product__cta" href="/"> + Quick Shop </a>
             </div>
-            <div class="card_bottom">
-              <div class="description">
+            <div class="product__details">
+              <h4 class="product__title">
                 Your Skin But Better CC+ Cream with SPF50 12ml
-              </div>
-              <div class="price">$28.00</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
-              </div>
-              <div class="price">$28.00</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
-              </div>
-              <div class="price">$28.00</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
-              </div>
-              <div class="price">$28.00</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="img_wrap">
-              <span class="img_status">NEW</span>
-              <div class="quick_shop">+ Quick Shop</div>
-            </div>
-            <div class="card_bottom">
-              <div class="description">
-                Your Skin But Better CC+ Cream with SPF50 12ml
-              </div>
-              <div class="price">$28.00</div>
+              </h4>
+              <h4 class="product__price">$28.00 <span>$31.00</span></h4>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
-
-    <section class="brand_name">
-      <h5>Why brand name?</h5>
-      <h3>
+    <section class="perfumes__section">
+      <h4 class="perfumes__section__subtitle">WHY BRAND NAME?</h4>
+      <h3 class="perfumes__section__maintitle">
         <span> Sed ut perspiciatis unde omy </span> At vero eos et accusamus et
         iusto odio dignissimos
       </h3>
-      <div class="card_wrap">
-        <div class="card">
-          <img src="/assets/imgs/cream.png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <span>
+      <div class="perfumes__section__list">
+        <div class="perfumes__section__item">
+          <img src="/assets/imgs/cream.png" alt="perfumes__section" />
+          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+          <span class="perfumes__section__item__text">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum
           </span>
         </div>
-        <div class="card">
+        <div class="perfumes__section__item">
           <img src="/assets/imgs/make-up.png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <span>
+          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+          <span class="perfumes__section__item__text">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum
           </span>
         </div>
-        <div class="card">
+        <div class="perfumes__section__item">
           <img src="/assets/imgs/perfume.png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <span>
+          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+          <span class="perfumes__section__item__text">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum
           </span>
         </div>
-        <div class="card">
+        <div class="perfumes__section__item">
           <img src="/assets/imgs/cotton-swabs.png" alt="" />
-          <h3>Lorem ipsum</h3>
-          <span>
+          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+          <span class="perfumes__section__item__text">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum
           </span>
         </div>
       </div>
     </section>
-
-    <section class="collections">
-      <div class="collection__slider__wrap">
-        <div class="collection__text__wrap">
-          <h2 class="collection__title">COLLECTIONS</h2>
-          <div class="collection__button-prev"><</div>
-          <div class="collection__button-next">></div>
+    <section class="section section__perfumes">
+      <div class="section__header">
+        <div class="header__controllers">
+          <div class="header__title">COLLECTIONS</div>
+          <div class="controller__prev"></div>
+          <div class="header__next"></div>
         </div>
-        <span
-          >At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum, Cream Shop</span
-        >
+        <div class="features__section__header__description">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum, Cream Shop
+        </div>
       </div>
-
-      <div class="swiper">
+      <div class="swiper feature__swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide_collection">1</div>
-          <div class="swiper-slide_collection">1</div>
-          <div class="swiper-slide_collection">1</div>
-          <div class="swiper-slide_collection">1</div>
-          <div class="swiper-slide_collection">1</div>
+          <div class="feature__swiper__item">
+            <img
+              src="/assets/imgs/feature__swipes1.png"
+              class="feature__swiper__item__image"
+            />
+            <div class="feature__swiper__text">Sed ut perspiciatis</div>
+          </div>
+          <div class="feature__swiper__item">
+            <img
+              src="/assets/imgs/feature__swipes2.png"
+              class="feature__swiper__item__image"
+            />
+            <div class="feature__swiper__text">Sed ut perspiciatis</div>
+          </div>
+          <div class="feature__swiper__item">
+            <img
+              src="/assets/imgs/feature__swipes3.png"
+              class="feature__swiper__item__image"
+            />
+            <div class="feature__swiper__text">Sed ut perspiciatis</div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="portirates__section">
+      <div class="portirates__section__item">
+        <div class="portirates__section__item__wrap">
+          <div class="portirates__section__item__title">
+            Neque porro quisquam est, qui dolorem
+          </div>
+          <div class="portirates__section__item__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation
+          </div>
+          <a href="/" class="portirates__section__item__link"
+            >Ingredient glossary</a
+          >
+        </div>
+        <img
+          src="/assets/imgs/portirates1.png"
+          class="portirates__section__item__image"
+        />
+      </div>
+      <div class="portirates__section__item">
+        <img
+          src="/assets/imgs/portirates2.png"
+          class="portirates__section__item__image"
+        />
+        <div class="portirates__section__item__wrap">
+          <div class="portirates__section__item__title">
+            Neque porro quisquam est, qui dolorem
+          </div>
+          <div class="portirates__section__item__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation
+          </div>
+          <a href="/" class="portirates__section__item__link"
+            >Ingredient glossary</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="shopping__section">
+      <div class="shopping__section__card">
+        <div class="shopping__section__card__subtitle">Featuring</div>
+        <div class="shopping__section__card__subtitle__title">
+          Sed ut perspiciatis
+        </div>
+        <div class="shopping__section__card__text">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident
+        </div>
+        <div class="shopping__section__card__atc">SHOP NOW</div>
+      </div>
+    </section>
+    <section class="models__section">
+      <div class="models__section__item">
+        <img
+          src="/assets/imgs/model1.png"
+          class="models__section__item__image"
+        />
+        <div class="models__section__item__text__wrap">
+          <div class="models__section__item__title">Nemo enim ipsam</div>
+          <div class="models__section__item__link">SHOP NOW</div>
+        </div>
+      </div>
+      <div class="models__section__item">
+        <img
+          src="/assets/imgs/model2.png"
+          class="models__section__item__image"
+        />
+        <div class="models__section__item__text__wrap">
+          <div class="models__section__item__title">Temporibus autem</div>
+          <div class="models__section__item__link">SHOP NOW</div>
+        </div>
+      </div>
+    </section>
+    <div class="sponsers">
+      <div class="sponsers__title">FEATURED</div>
+      <div class="sponsers__icons">
+        <object data="/assets/icons/VOGUE.svg"></object>
+        <object data="/assets/icons/allure.svg"></object>
+        <object data="/assets/icons/elle.svg"></object>
+        <object data="/assets/icons/womens.svg"></object>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__contact">
+        <div class="footer__contact__title">JOIN THE CLUB</div>
+        <div class="footer__contact__text">
+          Keep up with our new releases, beauty tips and what Winnie’s been up
+          to.
+        </div>
+        <div class="footer__contact__input__wrap">
+          <input placeholder="Email Address" class="footer__contact__input" />
+          <object data="/assets/icons/arrow.svg"></object>
+        </div>
+        <div class="footer__contact__medias">
+          <object data="/assets/icons/icon.svg"></object>
+          <object data="/assets/icons/icon2.svg"></object>
+          <object data="/assets/icons/icon3.svg"></object>
+        </div>
+        <div class="footer__contact__tcpp">
+          <span class="footer__contact__brand">© 2021 Cream Shop</span>
+          <span class="footer__contact__terms">Terms and conditions</span>
+          <span class="footer__contact__policy">Privacy Policy</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__links__column-1">
+          <ul>
+            <li>Shop All</li>
+            <li>Best Sellers</li>
+            <li>Universal Mineral</li>
+            <li>Isie Glow to Isle</li>
+            <li>Deepwater</li>
+            <li>Winne Selects</li>
+          </ul>
+        </div>
+        <div class="footer__links__column-2">
+          <ul>
+            <li>About Us</li>
+            <li>Ingredient Glossary</li>
+            <li>Sun Care 101</li>
+            <li>Our Journey</li>
+          </ul>
+        </div>
+        <div class="footer__links__column-3">
+          <ul>
+            <li>Contact Us</li>
+            <li>Help/FAQ</li>
+            <li>My Account</li>
+            <li>Shipping and Return</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="/node.js"></script>
+  <script src="/swiper.js"></script>
+  <script src="/products.js"></script>
 </html>

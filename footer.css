@@ -1,0 +1,127 @@
+footer {
+  display: flex;
+  width: 100%;
+  height: 480px;
+  background: #222;
+}
+
+.footer__contact {
+  flex: 25;
+  margin: 80px 0 40px 80px;
+  padding-right: 80px;
+  border-right: 1px solid #b7b7b7;
+}
+
+.footer__contact__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__contact__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #b7b7b7;
+  margin: 16px 0 24px 0;
+}
+.footer__contact__input__wrap {
+  position: relative;
+  max-width: 411px;
+}
+
+.footer__contact__input__wrap object {
+  position: absolute;
+  right: 20px;
+  width: 12px;
+  top: 20px;
+}
+
+.footer__contact__input {
+  border: 1px solid #b7b7b7;
+  border-radius: 61px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+  width: 411px;
+  height: 60px;
+  padding: 17px 24px;
+  background: transparent;
+}
+
+.footer__contact__medias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  max-width: 176px;
+  height: 48px;
+}
+
+.footer__contact__medias object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer__contact__tcpp {
+  max-width: 410px;
+  height: 22px;
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__contact__brand {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.footer__contact__terms,
+.footer__contact__policy {
+  font-weight: 400;
+  text-decoration-line: underline;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+.footer__links {
+  flex: 35;
+  margin: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links ul {
+  list-style: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 35px;
+  color: #b7b7b7;
+}
+
+.footer__links ul li:first-child {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  /* or 25px */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/* .footer__links ul */
