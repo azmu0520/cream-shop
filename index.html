@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/features__section.css" />
     <link rel="stylesheet" href="/portirates__section.css" />
     <link rel="stylesheet" href="footer.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -27,13 +28,13 @@
         </div>
         <div class="header__links__wrapper">
           <ul>
-            <li>SHOP</li>
+            <li class="mobile">SHOP</li>
             <li>ABOUT</li>
             <li>SUNCARE 101</li>
           </ul>
           <img src="./assets/imgs/title.png" alt="title" />
           <ul>
-            <li>ACCOUNT</li>
+            <li class="mobile">ACCOUNT</li>
             <li>SEARCH</li>
             <li>CART(0)</li>
           </ul>
@@ -54,7 +55,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="swiper section__products_list">
+      <div class="swiper swiper1 section__products_list">
         <div class="swiper-wrapper">
           <div class="swiper-slide section__products__item">
             <div class="section__products__item__view">
@@ -111,20 +112,22 @@
             </div>
           </div>
 
-          <div class="product__box swiper-slide">
-            <div class="product__image-wrapper">
-              <div class="product__badge">new</div>
+          <div class="section__products__item swiper-slide">
+            <div class="section__products__item__view">
+              <div class="section__products__item__status">new</div>
               <img
                 src="/assets/imgs/products-img2.png"
-                class="product__image"
+                class="section__products__item__image"
               />
-              <a class="product__cta" href="/"> + Quick Shop </a>
+              <div class="section__products__item__footer">
+                <a class="product__cta" href="/"> + Quick Shop </a>
+              </div>
             </div>
-            <div class="product__details">
-              <h4 class="product__title">
+            <div class="section__products__item__description">
+              <h4 class="section__products__item__title">
                 Your Skin But Better CC+ Cream with SPF50 12ml
               </h4>
-              <h4 class="product__price">$28.00 <span>$31.00</span></h4>
+              <h4 class="price">$28.00 <span>$31.00</span></h4>
             </div>
           </div>
         </div>
@@ -136,70 +139,73 @@
         <span> Sed ut perspiciatis unde omy </span> At vero eos et accusamus et
         iusto odio dignissimos
       </h3>
-      <div class="perfumes__section__list">
-        <div class="perfumes__section__item">
-          <img src="/assets/imgs/cream.png" alt="perfumes__section" />
-          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
-          <span class="perfumes__section__item__text">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum
-          </span>
+      <div class="swiper .swiper2">
+        <div class="swiper-wrapper perfumes__section__list">
+          <div class="perfumes__section__item swiper-slide">
+            <img src="/assets/imgs/cream.png" alt="perfumes__section" />
+            <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+            <span class="perfumes__section__item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </span>
+          </div>
+          <div class="perfumes__section__item swiper-slide">
+            <img src="/assets/imgs/make-up.png" alt="" />
+            <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+            <span class="perfumes__section__item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </span>
+          </div>
+          <div class="perfumes__section__item swiper-slide">
+            <img src="/assets/imgs/perfume.png" alt="" />
+            <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+            <span class="perfumes__section__item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </span>
+          </div>
+          <div class="perfumes__section__item swiper-slide">
+            <img src="/assets/imgs/cotton-swabs.png" alt="" />
+            <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
+            <span class="perfumes__section__item__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum
+            </span>
+          </div>
         </div>
-        <div class="perfumes__section__item">
-          <img src="/assets/imgs/make-up.png" alt="" />
-          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
-          <span class="perfumes__section__item__text">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum
-          </span>
-        </div>
-        <div class="perfumes__section__item">
-          <img src="/assets/imgs/perfume.png" alt="" />
-          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
-          <span class="perfumes__section__item__text">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum
-          </span>
-        </div>
-        <div class="perfumes__section__item">
-          <img src="/assets/imgs/cotton-swabs.png" alt="" />
-          <h3 class="perfumes__section__item__title">Lorem ipsum</h3>
-          <span class="perfumes__section__item__text">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum
-          </span>
-        </div>
+        <div class="swiper-pagination2"></div>
       </div>
     </section>
-    <section class="section section__perfumes">
-      <div class="section__header">
+    <section class="section features__section">
+      <div class="features__section__header">
         <div class="header__controllers">
           <div class="header__title">COLLECTIONS</div>
-          <div class="controller__prev"></div>
-          <div class="header__next"></div>
+          <div class="swiper3__prev"></div>
+          <div class="swiper3__next"></div>
         </div>
         <div class="features__section__header__description">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum, Cream Shop
         </div>
       </div>
-      <div class="swiper feature__swiper">
+      <div class="swiper swiper3">
         <div class="swiper-wrapper">
-          <div class="feature__swiper__item">
+          <div class="swiper-slide feature__swiper__item">
             <img
               src="/assets/imgs/feature__swipes1.png"
               class="feature__swiper__item__image"
             />
             <div class="feature__swiper__text">Sed ut perspiciatis</div>
           </div>
-          <div class="feature__swiper__item">
+          <div class="swiper-slide feature__swiper__item">
             <img
               src="/assets/imgs/feature__swipes2.png"
               class="feature__swiper__item__image"
             />
             <div class="feature__swiper__text">Sed ut perspiciatis</div>
           </div>
-          <div class="feature__swiper__item">
+          <div class="swiper-slide feature__swiper__item">
             <img
               src="/assets/imgs/feature__swipes3.png"
               class="feature__swiper__item__image"
@@ -209,6 +215,7 @@
         </div>
       </div>
     </section>
+
     <section class="portirates__section">
       <div class="portirates__section__item">
         <div class="portirates__section__item__wrap">
@@ -229,7 +236,7 @@
           class="portirates__section__item__image"
         />
       </div>
-      <div class="portirates__section__item">
+      <div class="portirates__section__item item--reverse">
         <img
           src="/assets/imgs/portirates2.png"
           class="portirates__section__item__image"
@@ -266,20 +273,24 @@
     </section>
     <section class="models__section">
       <div class="models__section__item">
-        <img
-          src="/assets/imgs/model1.png"
-          class="models__section__item__image"
-        />
+        <div class="img__wrapper">
+          <img
+            src="/assets/imgs/model1.png"
+            class="models__section__item__image"
+          />
+        </div>
         <div class="models__section__item__text__wrap">
           <div class="models__section__item__title">Nemo enim ipsam</div>
           <div class="models__section__item__link">SHOP NOW</div>
         </div>
       </div>
       <div class="models__section__item">
-        <img
-          src="/assets/imgs/model2.png"
-          class="models__section__item__image"
-        />
+        <div class="img__wrapper">
+          <img
+            src="/assets/imgs/model2.png"
+            class="models__section__item__image"
+          />
+        </div>
         <div class="models__section__item__text__wrap">
           <div class="models__section__item__title">Temporibus autem</div>
           <div class="models__section__item__link">SHOP NOW</div>
@@ -318,7 +329,7 @@
         </div>
       </div>
       <div class="footer__links">
-        <div class="footer__links__column-1">
+        <div class="footer__links__column">
           <ul>
             <li>Shop All</li>
             <li>Best Sellers</li>
@@ -328,7 +339,7 @@
             <li>Winne Selects</li>
           </ul>
         </div>
-        <div class="footer__links__column-2">
+        <div class="footer__links__column">
           <ul>
             <li>About Us</li>
             <li>Ingredient Glossary</li>
@@ -336,7 +347,7 @@
             <li>Our Journey</li>
           </ul>
         </div>
-        <div class="footer__links__column-3">
+        <div class="footer__links__column">
           <ul>
             <li>Contact Us</li>
             <li>Help/FAQ</li>
@@ -347,7 +358,6 @@
       </div>
     </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="/swiper.js"></script>
+  <script type="module" src="/swiper.js"></script>
   <script src="/products.js"></script>
 </html>

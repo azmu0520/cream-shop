@@ -40,6 +40,7 @@
   color: #7373d7;
   text-decoration: none;
   border-bottom: 2px solid #7373d7;
+  white-space: nowrap;
 }
 
 .portirates__section__item__image {
@@ -53,7 +54,9 @@
   max-width: 100%;
   height: 100vh;
   background: url(/assets/imgs/shopping__section.png);
+  background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .shopping__section__card {
@@ -79,7 +82,7 @@
   font-weight: 600;
   font-size: 52px;
   line-height: 140%;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -120,10 +123,11 @@
   column-gap: 24px;
   position: relative;
 }
-.models__section__item__image {
+
+.models__section__item img {
   width: 100%;
-  height: 100%;
 }
+
 .models__section__item__text__wrap {
   position: absolute;
   bottom: 40px;
@@ -156,6 +160,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 80px;
 }
 
 .sponsers__title {
@@ -165,4 +170,62 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .portirates__section__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .item--reverse {
+    flex-direction: column;
+  }
+  .portirates__section__item__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+  }
+  .shopping__section__card {
+    position: absolute;
+    bottom: -400px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+    /* gap: 0; */
+  }
+  .shopping__section {
+    margin: 0 0 400px 0;
+  }
+  .models__section {
+    padding: 0;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  .sponsers__icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sponsers__icons object {
+    max-width: 100%;
+    margin: 8px;
+  }
+  .sponsers {
+    height: fit-content;
+    padding: 40px;
+  }
+  .shopping__section__card__subtitle {
+    font-size: 16px;
+  }
+  .shopping__section__card__subtitle__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .models__section {
+    flex-direction: column;
+  }
 }
