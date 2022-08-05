@@ -240,7 +240,7 @@ nav ul li {
   margin-top: auto;
   background: #fff;
   width: 100%;
-  height: fit-content;
+  min-height: 15%;
   padding-top: 8px;
 }
 
