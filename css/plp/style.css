@@ -16,7 +16,7 @@ header {
   /* align-items: center; */
   flex-direction: column;
   width: 100%;
-  min-height: 600px;
+  min-height: 100vh;
   background: url(/assets/imgs/plp-hero.jpg);
   background-position: top;
   background-size: cover;
@@ -86,7 +86,7 @@ nav ul li {
   font-size: 16px;
   line-height: 160%;
   color: #ffffff;
-  max-width: 520px;
+  min-width: 100%;
 }
 .content__maintext {
   font-weight: 700;
