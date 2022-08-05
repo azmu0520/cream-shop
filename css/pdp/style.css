@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100%;
+  min-height: 120px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.header__announcement {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #222222;
+  border-bottom: 1px solid #555555;
+  padding-bottom: 8px;
+}
+
+nav {
+  width: 100%;
+  padding: 0 40px;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-right: 24px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*   ------------------------------------  INGRIDIENTS -------------------------- */
+
+.ingredients__section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.ingredient__description {
+  flex: 1.2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.description__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.description__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #222222;
+  padding: 24px 0px 62px 0px;
+}
+
+.description__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.description__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 193px;
+  height: 178px;
+  background: #e9e9ff;
+}
+
+.box__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  padding-top: 16px;
+}
+
+.description__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 40px;
+  text-decoration: none;
+  border-bottom: 2px solid #7373d7;
+}
+
+.ingredient__image {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* ---------------------------  PRODUCTS LIST ---------------------------- */
+
+.products__section {
+  margin-top: 30px;
+  height: fit-content;
+  padding: 100px 80px;
+}
+
+.product__card {
+  max-width: 410px;
+  max-height: 630px;
+  background: #7373d7;
+}
+
+.products__section .header__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  height: 85%;
+  padding: 16px;
+}
+
+.image__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  min-width: 60px;
+  min-height: 60px;
+  background: #c9c9ff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7373d7;
+  margin-left: auto;
+  /* padding: 10px; */
+}
+
+.image__cta {
+  margin-top: 12%;
+  font-weight: 400;
+  height: 100%;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 0;
+  line-height: 160%;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.image__cta a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card__details {
+  margin-top: auto;
+  background: #fff;
+  width: 100%;
+  min-height: 15%;
+  padding-top: 8px;
+}
+
+.details__title,
+.details__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #222222;
+  padding-bottom: 5px;
+}
+
+.details__price span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration-line: line-through;
+  color: #555555;
+  opacity: 0.5;
+  margin-right: 8px;
+}
