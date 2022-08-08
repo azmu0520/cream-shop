@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/pdp/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/home/footer.css" />
   </head>
   <body>
     <header>
@@ -30,11 +35,96 @@
         </div>
       </nav>
     </header>
-    <!-- <section class="details__section">
-      <div class="details__production">
-        <div class="production__gallery"></div>
+    <div class="location">
+      Home <object data="/assets/icons/slash.svg"></object> Best Seller
+      <object data="/assets/icons/slash.svg"></object>
+      <span>Universal Mineral Face Lotion SPF55</span>
+    </div>
+    <section class="details__production">
+      <div class="production__gallery">
+        <div class="gallery__aside">
+          <img src="/assets/imgs/products-img1.png" />
+          <img src="/assets/imgs/products-img2.png" />
+          <img src="/assets/imgs/products-img3.png" />
+          <img src="/assets/imgs/products-img1.png" />
+          <img src="/assets/imgs/products-img3.png" />
+        </div>
+        <div class="gallary__main__image swiper swiper__gallary">
+          <div class="swiper-wrapper">
+            <img src="/assets/imgs/products-img3.png" class="swiper-slide" />
+            <img
+              src="/assets/imgs/products-img2.png"
+              class="swiper-slide swiper-mobile"
+            />
+            <img
+              src="/assets/imgs/products-img3.png"
+              class="swiper-slide swiper-mobile"
+            />
+            <img
+              src="/assets/imgs/products-img1.png"
+              class="swiper-slide swiper-mobile"
+            />
+            <img
+              src="/assets/imgs/products-img1.png"
+              class="swiper-slide swiper-mobile"
+            />
+          </div>
+          <div class="swiper-button-wrapper">
+            <div class="swiper-button-prev-gallary"><</div>
+            <div class="swiper-pagination-gallary"></div>
+            <div class="swiper-button-next-gallary">></div>
+          </div>
+        </div>
       </div>
-    </section> -->
+      <div class="product__details">
+        <div class="product__name">Niche Beauty CCC Cream - Niche Beauty</div>
+        <div class="product__price">$28.00</div>
+        <div class="product__text">
+          <span
+            >The original, weightless, scentless sunscreen with SPF 55 that
+            leaves a shinny finish.</span
+          >
+          Formulated with the most sensitive and vulnerable in mind, with a
+          custom blend of natural, gentle and hydrating island ingredients mixed
+          with the most effective skincare-grade actives.
+        </div>
+        <div class="product__size product__text"><span>Size</span> 50ml</div>
+        <div class="product__varients">
+          <div class="variant__one">1.7 fl oz</div>
+          <div>2.5 fl oz</div>
+          <div class="unavailbale">3.4 fl oz</div>
+        </div>
+        <div class="product__subscriptions">
+          <div class="subscription__element">
+            <input type="radio" id="one" name="element" />
+            <label for="one">$28.00 One time purchase</label>
+          </div>
+          <div class="subscription__element">
+            <input type="radio" id="two" name="element" />
+            <label for="two">$25.99 Subscribe and save. Details</label>
+          </div>
+        </div>
+        <div class="cta__wrapper">
+          <div class="cta__controllers">
+            <div class="qty__controller"><span>-</span> 1 <span>+</span></div>
+            <div class="cta__button">Add to cart - $28.00</div>
+          </div>
+          <div class="cta__text">
+            Starting at $20/mo with
+            <object data="/assets/icons/cta__logo.svg"></object>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="products__dropdowns">
+            <div class="dropdown__element">Use Instruction <span>+</span></div>
+            <div class="dropdown__element">Ingredients <span>+</span></div>
+            <div class="dropdown__element">
+              Shipping and Returns <span>+</span>
+            </div>
+            <div class="dropdown__element">How to Recycle <span>+</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="ingredients__section">
       <div class="ingredient__description">
@@ -48,54 +138,239 @@
           <div class="description__box">
             <object data="/assets/icons/ingredient6.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
           <div class="description__box">
             <object data="/assets/icons/ingredient5.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
           <div class="description__box">
             <object data="/assets/icons/ingredient4.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
           <div class="description__box">
             <object data="/assets/icons/ingredient3.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
           <div class="description__box">
             <object data="/assets/icons/ingredient2.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
           <div class="description__box">
             <object data="/assets/icons/ingredient1.svg"></object>
             <div class="box__title">Hydrating Nectar</div>
+            <object data="/assets/icons/arrow.svg" class="box__arrow"></object>
           </div>
         </div>
         <a href="#" class="description__link">Full Ingredient glossary</a>
       </div>
       <img src="/assets/imgs/ingredient.jpg" class="ingredient__image" />
     </section>
+
     <section class="products__section">
       <div class="section__header">
         <div class="header__title">You might also like</div>
-        <div class="header__controllers">< ></div>
+        <div class="header__controllers">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
-      <div class="products__list">
-        <div class="product__card">
-          <div class="card__image">
-            <div class="image__badge">new</div>
-            <img src="/assets/imgs/products-img1.png" />
-            <div class="image__cta">
-              <a href="#"> + Quick Shop </a>
+      <div class="swiper products__swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
             </div>
           </div>
-          <div class="card__details">
-            <h4 class="details__title">
-              Your Skin But Better CC+ Cream with SPF50 12ml
-            </h4>
-            <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
+          </div>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
+          </div>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
+          </div>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
+          </div>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
+          </div>
+          <div class="swiper-slide product__card">
+            <div class="card__image">
+              <div class="image__badge">new</div>
+              <img src="/assets/imgs/products-img1.png" />
+              <div class="image__cta">
+                <a href="#"> + Quick Shop </a>
+              </div>
+            </div>
+            <div class="card__details">
+              <h4 class="details__title">
+                Your Skin But Better CC+ Cream with SPF50 12ml
+              </h4>
+              <h4 class="details__price">$28.00 <span> $32.00</span></h4>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="customers__section">
+      <div class="customer__aside">
+        <h4 class="aside__subtitle">the result</h4>
+        <h2 class="aside__title">from our customers</h2>
+        <div class="header__controllers">
+          <div class="swiper-button-prev-customer"><</div>
+          <div class="swiper-button-next-customer">></div>
+        </div>
+      </div>
+      <div class="swiper customer-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide customer__image">
+            <img src="/assets/imgs/customer1.jpg" alt="slider" />
+          </div>
+          <div class="swiper-slide customer__image">
+            <img src="/assets/imgs/customer2.jpg" alt="slider" />
+          </div>
+
+          <div class="swiper-slide customer__image">
+            <img src="/assets/imgs/customer3.jpg" alt="slider" />
+          </div>
+          <div class="swiper-slide customer__image">
+            <img src="/assets/imgs/customer3.jpg" alt="slider" />
+          </div>
+          <div class="swiper-slide customer__image">
+            <img src="/assets/imgs/customer3.jpg" alt="slider" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__contact">
+        <div class="footer__contact__title">JOIN THE CLUB</div>
+        <div class="footer__contact__text">
+          Keep up with our new releases, beauty tips and what Winnie’s been up
+          to.
+        </div>
+        <div class="footer__contact__input__wrap">
+          <input placeholder="Email Address" class="footer__contact__input" />
+          <object data="/assets/icons/arrow.svg"></object>
+        </div>
+        <div class="footer__contact__medias">
+          <object data="/assets/icons/icon.svg"></object>
+          <object data="/assets/icons/icon2.svg"></object>
+          <object data="/assets/icons/icon3.svg"></object>
+        </div>
+        <div class="footer__contact__tcpp">
+          <span class="footer__contact__brand">© 2021 Cream Shop</span>
+          <span class="footer__contact__terms">Terms and conditions</span>
+          <span class="footer__contact__policy">Privacy Policy</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__links__column">
+          <ul>
+            <li>Shop All</li>
+            <li>Best Sellers</li>
+            <li>Universal Mineral</li>
+            <li>Isie Glow to Isle</li>
+            <li>Deepwater</li>
+            <li>Winne Selects</li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <ul>
+            <li>About Us</li>
+            <li>Ingredient Glossary</li>
+            <li>Sun Care 101</li>
+            <li>Our Journey</li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <ul>
+            <li>Contact Us</li>
+            <li>Help/FAQ</li>
+            <li>My Account</li>
+            <li>Shipping and Return</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/pdp/swiper.js"></script>
 </html>
