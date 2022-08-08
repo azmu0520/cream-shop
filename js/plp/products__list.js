@@ -196,7 +196,6 @@ var show = false;
 cta__btn.addEventListener('click', () => {
   show = !show;
 });
-
 console.log(show, 'o');
 
 const mappedProducts = production__list.map((product, index) => {
