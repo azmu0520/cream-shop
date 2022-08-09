@@ -717,9 +717,6 @@ nav ul li a {
     width: 5px !important;
     transform: rotate(90deg);
   }
-  .description__link {
-    /* margin-left: 5rem; */
-  }
 
   .products__section {
     padding: 50px 40px;

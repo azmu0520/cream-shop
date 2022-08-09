@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="/css/pdp/style.css" />
+    <link rel="stylesheet" href="/css/card/style.css" />
+    <link rel="stylesheet" href="/css/home/footer.css" />
+    <script src="/js/cart/product__map.js" async></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header__announcement">
+          Free Shipping for all orders over $100
+        </div>
+        <div class="header__links">
+          <ul>
+            <li class="mobile">
+              <a href="/html/plp/index.html"> SHOP</a>
+            </li>
+            <li>ABOUT</li>
+            <li>SUNCARE 101</li>
+          </ul>
+          <img src="/assets/icons/Headline.svg" alt="title" />
+          <ul>
+            <li class="mobile">ACCOUNT</li>
+            <li>SEARCH</li>
+            <li>CART(0)</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="breadcrumb">
+      <span> Home</span> <object data="/assets/icons/slash.svg"></object>
+      My Cart
+    </div>
+    <section class="myCart__section">
+      <h1 class="myCart__title">My Cart</h1>
+      <div class="myCart__indicator">
+        <div class="indicator__bar"></div>
+
+        $12.00 away from Free Shipping
+      </div>
+      <table class="myCart__table">
+        <thead class="table__header">
+          <tr class="thead__row">
+            <th class="product--details">Product</th>
+            <th class="product__price">Price</th>
+            <th class="product__quantity">Quantity</th>
+            <th class="product__total">Total</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="tfoot">
+        <div class="tfoot__order">
+          <h3 class="order__title">Order Notes</h3>
+          <textarea type="text" class="order__input"></textarea>
+        </div>
+        <div class="tfoot__checkout">
+          <div class="checkout__wrap">
+            <h4 class="checkout__title">Subtotal</h4>
+            <span class="checkout__price checkout__title">$112.00</span>
+          </div>
+          <div class="checkout__text">
+            Shipping and tax calculated at checkout.
+          </div>
+          <div class="checkout__discout">
+            <object data="/assets/icons/discount.svg"></object> Auto
+            <span>-$10.00</span>
+          </div>
+          <div class="checkout__total">TOTAL <span>$102.00</span></div>
+          <div class="checkout__cta">Secure checkout</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__contact">
+        <div class="footer__contact__title">JOIN THE CLUB</div>
+        <div class="footer__contact__text">
+          Keep up with our new releases, beauty tips and what Winnie’s been up
+          to.
+        </div>
+        <div class="footer__contact__input__wrap">
+          <input placeholder="Email Address" class="footer__contact__input" />
+          <object data="/assets/icons/arrow.svg"></object>
+        </div>
+        <div class="footer__contact__medias">
+          <object data="/assets/icons/icon.svg"></object>
+          <object data="/assets/icons/icon2.svg"></object>
+          <object data="/assets/icons/icon3.svg"></object>
+        </div>
+        <div class="footer__contact__tcpp">
+          <span class="footer__contact__brand">© 2021 Cream Shop</span>
+          <span class="footer__contact__terms">Terms and conditions</span>
+          <span class="footer__contact__policy">Privacy Policy</span>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__links__column">
+          <ul>
+            <li>Shop All</li>
+            <li>Best Sellers</li>
+            <li>Universal Mineral</li>
+            <li>Isie Glow to Isle</li>
+            <li>Deepwater</li>
+            <li>Winne Selects</li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <ul>
+            <li>About Us</li>
+            <li>Ingredient Glossary</li>
+            <li>Sun Care 101</li>
+            <li>Our Journey</li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <ul>
+            <li>Contact Us</li>
+            <li>Help/FAQ</li>
+            <li>My Account</li>
+            <li>Shipping and Return</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
