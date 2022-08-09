@@ -276,6 +276,9 @@ tbody {
 .detail__remove-mobile {
   display: none;
 }
+.discount__icon {
+  margin-right: 8px;
+}
 
 /* ---------------------------------- Mobile  --------------------------*/
 

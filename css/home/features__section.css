@@ -96,7 +96,7 @@
 @media (max-width: 1200px) {
   .features__section {
     padding: 40px 16px;
-    max-height: fit-content;
+    min-height: fit-content;
   }
   .header__title {
     font-weight: 600;

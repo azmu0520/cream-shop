@@ -66,6 +66,10 @@ nav ul li {
   line-height: 19px;
   color: #fff;
 }
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .header__content {
   max-width: 800px;

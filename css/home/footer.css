@@ -48,7 +48,7 @@ footer {
   font-size: 16px;
   line-height: 160%;
   color: #ffffff;
-  max-width: 411px;
+  min-width: 100%;
   height: 60px;
   padding: 17px 24px;
   background: transparent;
@@ -135,13 +135,16 @@ footer {
   .footer__contact {
     border: none;
 
-    margin: 40px;
+    margin: 40px 16px;
   }
   .footer__links {
-    margin: 40px;
+    margin: 40px 16px;
     flex-wrap: wrap;
   }
   .footer__links__column {
     min-width: 153px;
+  }
+  .footer__contact__tcpp {
+    margin-top: 40px;
   }
 } ;

@@ -215,7 +215,7 @@ const mappedProducts = production__list.map((product, index) => {
                 <div class="image__badge">${product?.status}</div>
                 <img src="/assets/imgs/products-img1.png" />
                 <div class="image__cta">
-                    <a href="#"> + Quick Shop </a>
+                    <a href="/html/pdp/index.html"> + Quick Shop </a>
                 </div>
             </div>
             <div class="card__details">
@@ -233,7 +233,7 @@ const mappedProducts = production__list.map((product, index) => {
                 <div class="image__badge">${product?.status}</div>
                 <img src="/assets/imgs/products-img1.png" />
                 <div class="image__cta">
-                    <a href="#"> + Quick Shop </a>
+                    <a href="/html/pdp/index.html"> + Quick Shop </a>
                 </div>
            </div>
             <div class="card__details">
